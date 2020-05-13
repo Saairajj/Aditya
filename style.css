@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+
+body{
+  font-family: 'Lato', sans-serif;
+  overflow-x: hidden;
+  color: #505962;
+}
+
+.offset::before{
+  display: block;
+  content: "";
+  height: 4rem;
+  margin-top: -4rem;
+}
+
+/* Navbar */
+
+.navbar{
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 0.9rem;
+  letter-spacing: 0.1rem;
+  background: rgba(0, 0, 0, 0.6)!important;
+}
+
+.navbar-brand img{
+  /* height: 2rem; */
+}
+
+.navbar-nav li{
+  padding: 0.7em;
+}
+
+.navbar .navbar-nav .nav-link {
+  color: white;
+  padding-top: 0.8rem;
+}
+
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:hover{
+  color: cornflowerblue;
+}
+
+.home-inner{
+  background-image: url(img/still.JPG);
+}
+
+.caption{
+  width: 100%;
+  max-width: 100%;
+  top: 37%;
+  position: absolute;
+  color: white;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+.caption h1{
+  font-size: 60px;
+  font-weight: bold;
+  text-shadow: 0.1rem 0.1rem 0.8rem black;
+  letter-spacing: 0.3rem;
+  word-spacing: 0.2rem;
+  padding-bottom: 0.8rem;
+}
+
+.caption h3{
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  text-shadow: 0.1rem 0.1rem 0.5rem black;
+  padding-bottom: 1.6rem;
+}
+
+.btn{
+  border-radius: 0px;
+  border-width: medium;
+  padding: 0.6rem 1.3rem;
+  font-size: 1.1rem;
+}
+
+/* start of course section */
+
+.narrow{
+  width: 75%;
+  margin: 1.5rem auto;
+  padding-top: 2rem;
+}
+
+.narrow h1{
+  font-size: 2.5rem;
+}
+
+.btn-secondary{
+  border: medium;
+  border-radius: 0;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  padding: 0.6rem 1.2rem;
+  margin: 1rem;
+  background-color: cornflowerblue;
+  color: white;
+  border: cornflowerblue;
+}
+
+.btn-secondary:hover{
+  background-color: rgb(49, 68, 104);
+  border: rgb(49, 68, 104);;
+}
+
+
+/* Start of feature section */
+
+.jumbotron {
+  margin-bottom: 0;
+  padding: 2rem 0 3.5rem;
+  border-radius: 0;
+}
+
+h3.heading{
+  font-size: 2.4rem;
+  font-weight: bold;
+  /* text-transform: uppercase; */
+  margin-bottom: 2rem;
+}
+
+.heading span{
+  color: cornflowerblue;
+}
+
+.heading-underline{
+  width: 3rem;
+  height: 0.2rem;
+  background-color: cornflowerblue;
+  margin: 0 auto 2rem;
+}
+
+.feature .svg-inline--fa{
+  color: cornflowerblue;
+}
+
+.feature h1{
+  font-size: 1.4rem;
+  padding-bottom: 0.4rem;
+  text-transform: uppercase;
+}
+
+.feature p{
+  font-size: 1.1rem;
+}
+
+
+/* Start of resource section */
+
+.fixed{
+  background-image: url(img/wool.JPG);
+  z-index: -1;
+}
+.dark{
+  background-color: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 7rem 2rem;
+}
+
+
+.fixed-background h3 {
+  padding-bottom: 1.2rem;
+}
+
+.fixed-background p {
+  padding-top: 1.2rem;
+}
+
+/* start of cline section */
+
+.clients img{
+  width: 100%;
+  border-radius: 50%;
+}
+
+blockquote .svg-inline--fa{
+  color: cornflowerblue;
+  margin: 1rem;
+}
+
+.client-hr{
+  border-top: 0.07rem solid cornflowerblue;
+}
+
+
+
+/* Start of contact section */
+
+
+footer {
+  background-color: #40474e;
+  color: white;
+  padding: 2rem 0 2rem;
+  margin-top: 1rem;
+}
+
+footer img {
+  height: 3rem;
+  margin: 1.5rem 0 ;
+}
+
+footer a {
+  color: white;
+}
+
+footer .svg-inline--fa {
+  font-size: 1.6rem;
+  margin: 1.2rem 0.5rem 0 0;
+}
+
+footer .svg-inline--fa:hover {
+  color: cornflowerblue;
+}
+
+hr.socket {
+  width: 100%;
+  border-top: 0.1rem solid #666b71;
+  margin-top: 3rem;
+}
+
+
+/* Media Queries */
+
+@media (max-width:767px) {
+
+  .caption h1{
+    font-size: 2.1rem;
+    letter-spacing: 0.15rem;
+    word-spacing: 0px;
+    padding-bottom: 0.4rem;
+  }
+  
+  .caption h3{
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem;
+    padding-bottom: 1.2rem;
+  }
+
+  .btn{
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+  
+  .narrow h1{
+    font-size: 1.5rem;
+  }
+
+  .clients img{
+    max-width: 50%;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+
+
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
